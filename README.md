@@ -13,6 +13,10 @@ This is a simple Python script that generates random Lightshot image IDs and ope
 - Builds a Lightshot URL: `https://www.prnt.sc/<id>`
 - Opens 5 random image links in your default browser
 - Beginner-friendly and lightweight — no external libraries
+- Asks user if they want to save all generated links to a file
+- Asks user if they want to open generated link in browser 
+- Added an exception for links with 404 not found 
+- Used pyinputplus to give clean interface of responses 
 
 ---
 
@@ -24,15 +28,6 @@ This is a simple Python script that generates random Lightshot image IDs and ope
 
 ---
 
-## 📁 File Structure
-
-```
-
-lightshot-opener/
-├── lightshot\_opener.py
-└── README.md
-
-````
 
 ---
 
@@ -50,6 +45,7 @@ No need to modify anything unless you want to change the number of tabs opened.
    ```bash
    git clone https://github.com/YourUsername/lightshot-opener.git
    cd lightshot-opener
+   pip install -r requirements.txt
 ````
 
 2. Run the script:
